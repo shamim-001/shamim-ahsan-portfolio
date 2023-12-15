@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <section className="container h-screen w-full py-12">
+    <section className="container w-full py-12">
       <h1 className=" text-3xl font-extrabold">My Skills</h1>
 
-      <p className=" w-1/2 py-12 leading-relaxed text-muted-foreground">
+      <p className="py-12 leading-relaxed text-muted-foreground lg:w-4/5">
         In addition to the bootcamp&apos;s curriculum, I&apos;ve actively
         expanded my knowledge through online courses like &quot;
         <Link
@@ -35,7 +35,7 @@ const Page = () => {
         &quot; for a comprehensive foundation.
       </p>
 
-      <div className="grid grid-cols-2 gap-8  py-12 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8  py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <div className="flex flex-col gap-5 text-2xl font-bold">
           <li className=" flex list-none items-center justify-start gap-2">
             <span className="text-green-500">
