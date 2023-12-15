@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="container h-screen">
+    <main className="container">
       <section className="flex  flex-col items-center gap-8 pt-12 md:flex-row-reverse md:justify-center md:gap-20">
         <div>
           <Image
