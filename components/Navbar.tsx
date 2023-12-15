@@ -12,7 +12,22 @@ const Navbar = () => {
       <div className="container flex items-center justify-between">
         <div>
           <Link href="/">
-            <Image src="/logo.png" height={72} width={72} priority alt="Logo" />
+            <Image
+              className="md:hidden"
+              src="/logo.png"
+              height={40}
+              width={40}
+              priority
+              alt="Logo"
+            />
+            <Image
+              className="hidden md:block"
+              src="/logo.png"
+              height={66}
+              width={66}
+              priority
+              alt="Logo"
+            />
           </Link>
         </div>
 
