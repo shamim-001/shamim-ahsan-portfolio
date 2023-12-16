@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import ModeToggle from "./ModeToggle";
-import NavItems from "./NavItems";
 
 import { Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
+import { NAVITEMS } from "@/constants/constants";
 
 const Navbar = () => {
   return (
@@ -32,7 +34,19 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex">
-          <NavItems />
+          {NAVITEMS.map((item) => (
+            <nav className=" flex flex-col gap-3 md:flex-row" key={item.href}>
+              <Link
+                href={item.href}
+                className={cn(
+                  buttonVariants({ variant: "ghost" }),
+                  "text-lg justify-start"
+                )}
+              >
+                {item.label}
+              </Link>
+            </nav>
+          ))}
         </div>
 
         <div className="flex justify-end gap-5">
@@ -45,9 +59,23 @@ const Navbar = () => {
               <SheetTrigger>
                 <Menu />
               </SheetTrigger>
-              <SheetContent>
-                <NavItems />
-              </SheetContent>
+              <SheetClose>
+                <SheetContent side="left">
+                  {NAVITEMS.map((item) => (
+                    <nav className=" flex flex-col gap-3" key={item.href}>
+                      <Link
+                        href={item.href}
+                        className={cn(
+                          buttonVariants({ variant: "ghost" }),
+                          "text-lg justify-start w-full"
+                        )}
+                      >
+                        {item.label}
+                      </Link>
+                    </nav>
+                  ))}
+                </SheetContent>
+              </SheetClose>
             </Sheet>
           </div>
         </div>
