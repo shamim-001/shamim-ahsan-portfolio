@@ -37,7 +37,11 @@ export default function Home() {
             I made the transition from teaching to development by learning from
             amazing YouTube instructors worldwide and utilizing online education
             platforms such as{" "}
-            <Link className="underline" href="https://www.w3schools.com/">
+            <Link
+              target="_blank"
+              className="underline"
+              href="https://www.w3schools.com/"
+            >
               w3schools.com
             </Link>
             .
@@ -47,6 +51,7 @@ export default function Home() {
             I&apos;ve refined my skills by tackling challenges on online
             frontend challenge sites like{" "}
             <Link
+              target="_blank"
               className="underline"
               href="https://www.frontendmentor.io/profile/shamim-001"
             >
