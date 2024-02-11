@@ -7,16 +7,17 @@ const Page = () => {
       <h1 className=" text-3xl font-extrabold">My Skills</h1>
 
       <p className="py-12 leading-relaxed text-muted-foreground lg:w-4/5">
-        In addition to the bootcamp&apos;s curriculum, I&apos;ve actively
-        expanded my knowledge through online courses like &quot;
+        I&apos;ve actively expanded my knowledge through online courses like
+        &quot;
         <Link
           target="_blank"
           className="underline"
-          href="https://www.youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige"
+          href="https://www.joyofreact.com/"
         >
-          Chai aur React - with projects
+          The Joy of React
         </Link>
-        &quot; for building practical React applications, &quot;
+        &quot; for gaining reactjs knowledge and building practical React
+        applications, &quot;
         <Link
           target="_blank"
           className="underline"
@@ -28,11 +29,11 @@ const Page = () => {
         <Link
           target="_blank"
           className="underline"
-          href="https://javascript30.com/"
+          href="https://www.totaltypescript.com/tutorials/react-with-typescript"
         >
-          Javascript 30
+          React with TypeScript
         </Link>{" "}
-        &quot; for a comprehensive foundation.
+        &quot; for bringing TS support to a React project.
       </p>
 
       <div className="grid grid-cols-1 gap-8  py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -87,21 +88,6 @@ const Page = () => {
               <BadgeCheck />
             </span>
             NextJs
-          </li>
-          <li className=" flex list-none items-center justify-start gap-2">
-            <span className="text-green-500">
-              <BadgeCheck />
-            </span>
-            Prisma
-          </li>
-        </div>
-
-        <div className="flex flex-col gap-5 text-2xl font-bold">
-          <li className=" flex list-none items-center justify-start gap-2">
-            <span className="text-green-500">
-              <BadgeCheck />
-            </span>
-            Supabase
           </li>
           <li className=" flex list-none items-center justify-start gap-2">
             <span className="text-green-500">

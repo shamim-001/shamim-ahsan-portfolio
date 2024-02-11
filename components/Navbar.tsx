@@ -10,7 +10,7 @@ import { NAVITEMS } from "@/constants/constants";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-50 border-b py-2 shadow-xl backdrop-blur-3xl">
+    <header className="sticky top-0 z-50 border-b bg-secondary py-2 shadow-xl">
       <div className="container flex items-center justify-between">
         <div>
           <Link href="/">

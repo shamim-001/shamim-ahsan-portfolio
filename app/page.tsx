@@ -34,23 +34,26 @@ export default function Home() {
       <section className="grid grid-cols-1 gap-5 py-12 md:grid-cols-2 md:gap-20">
         <div className="flex flex-col gap-5">
           <p className="text-muted-foreground">
-            From classroom to code, I transitioned from teaching to development
-            through
-            <span> &quot;JS Mastary Pro&quot; </span> with{" "}
-            <span className="underline hover:text-blue-500">
-              <Link
-                target="_blank"
-                href="https://twitter.com/jsmasterypro?lang=en"
-              >
-                Adrian.
-              </Link>
-            </span>{" "}
+            I made the transition from teaching to development by learning from
+            amazing YouTube instructors worldwide and utilizing online education
+            platforms such as{" "}
+            <Link className="underline" href="https://www.w3schools.com/">
+              w3schools.com
+            </Link>
+            .
           </p>
 
           <p className="text-muted-foreground">
-            I have honed my skills, tackling challenges and raising my developer
-            bar with each new endeavor through collaborative projects and
-            invaluable mentor feedback.
+            I&apos;ve refined my skills by tackling challenges on online
+            frontend challenge sites like{" "}
+            <Link
+              className="underline"
+              href="https://www.frontendmentor.io/profile/shamim-001"
+            >
+              Frontend Mentor
+            </Link>{" "}
+            and continually raising the bar through collaborative projects and
+            invaluable feedback from mentors.
           </p>
         </div>
 
