@@ -28,7 +28,7 @@ export default function Home() {
           Hi there, I am Shamim Ahsan. <br />
           Front End <span className=" text-violet-600">
             Developer,
-          </span> <br /> and Perpetual Student.
+          </span> <br /> and Perpetual Learner.
         </h1>
       </section>
       <section className="grid grid-cols-1 gap-5 py-12 md:grid-cols-2 md:gap-20">

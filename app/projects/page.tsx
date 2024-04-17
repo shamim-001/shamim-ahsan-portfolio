@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className="container w-full py-12">
+    <section className="container w-full py-12">
       <h1 className=" text-3xl font-extrabold">What I have been working on</h1>
-      <p className="py-5 text-muted-foreground">
+      <p className="py-12 text-muted-foreground">
         I like to learn through building projects. Take a look at some of the
         projects I have dedicated my time to.
       </p>
@@ -19,7 +19,7 @@ const Page = () => {
               alt="multi step form"
               height={600}
               width={600}
-              className="h-full w-full rounded-sm shadow-md"
+              className="size-full rounded-sm shadow-md"
             />
           </div>
 
@@ -38,7 +38,7 @@ const Page = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

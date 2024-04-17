@@ -6,7 +6,7 @@ import { Menu } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
-import { NAVITEMS } from "@/constants/constants";
+import { NAVITEMS, SOCIAL_LINKS } from "@/constants/constants";
 
 const Navbar = () => {
   return (
@@ -50,8 +50,19 @@ const Navbar = () => {
         </div>
 
         <div className="flex justify-end gap-5">
-          <div className=" cursor-pointer">
-            <ModeToggle />
+          <div className="flex gap-5">
+            <div className="flex items-center gap-5">
+              {SOCIAL_LINKS.map((item) => (
+                <div key={item.title}>
+                  <Link className="text-xl" href={item.url} target="_blank">
+                    {item.logo}
+                  </Link>
+                </div>
+              ))}
+            </div>
+            <div className=" cursor-pointer">
+              <ModeToggle />
+            </div>
           </div>
 
           <div className=" cursor-pointer md:hidden">

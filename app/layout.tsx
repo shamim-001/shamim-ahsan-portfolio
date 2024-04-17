@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           disableTransitionOnChange
         >
           <Navbar />
-          {children}
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
