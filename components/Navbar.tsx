@@ -1,17 +1,16 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import ModeToggle from "./ModeToggle";
 
+import { SOCIAL_LINKS } from "@/constants/constants";
 import { Menu } from "lucide-react";
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "./ui/button";
-import { NAVITEMS, SOCIAL_LINKS } from "@/constants/constants";
+import Menubar from "./Menubar";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-50 border-b bg-secondary py-2 shadow-xl">
-      <div className="container flex items-center justify-between">
+    <header className="navbar sticky top-0 z-50 border-b border-base-100 bg-base-100  py-2 shadow-xl">
+      <div className="container  flex items-center justify-between">
         <div>
           <Link href="/">
             <Image
@@ -33,20 +32,8 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="hidden md:flex">
-          {NAVITEMS.map((item) => (
-            <nav className=" flex flex-col gap-3 md:flex-row" key={item.href}>
-              <Link
-                href={item.href}
-                className={cn(
-                  buttonVariants({ variant: "ghost" }),
-                  "text-lg justify-start"
-                )}
-              >
-                {item.label}
-              </Link>
-            </nav>
-          ))}
+        <div className="hidden md:block">
+          <Menubar />
         </div>
 
         <div className="flex justify-end gap-5">
@@ -64,30 +51,34 @@ const Navbar = () => {
               <ModeToggle />
             </div>
           </div>
-
+          {/* Mobile Menu */}
           <div className=" cursor-pointer md:hidden">
-            <Sheet>
-              <SheetTrigger>
-                <Menu />
-              </SheetTrigger>
-              <SheetClose>
-                <SheetContent side="left">
-                  {NAVITEMS.map((item) => (
-                    <nav className=" flex flex-col gap-3" key={item.href}>
-                      <Link
-                        href={item.href}
-                        className={cn(
-                          buttonVariants({ variant: "ghost" }),
-                          "text-lg justify-start w-full"
-                        )}
-                      >
-                        {item.label}
-                      </Link>
-                    </nav>
-                  ))}
-                </SheetContent>
-              </SheetClose>
-            </Sheet>
+            <div className="drawer">
+              <input
+                id="mobile-menu"
+                type="checkbox"
+                className="drawer-toggle"
+              />
+              <div className="drawer-content">
+                <label
+                  htmlFor="mobile-menu"
+                  className="drawer-button cursor-pointer"
+                >
+                  <Menu />
+                </label>
+              </div>
+              <div className="drawer-side">
+                <label
+                  htmlFor="mobile-menu"
+                  aria-label="close sidebar"
+                  className="drawer-overlay"
+                ></label>
+                <ul className="menu min-h-full w-80 bg-base-200 p-4 text-base-content">
+                  {/* Sidebar content here */}
+                  <Menubar />
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

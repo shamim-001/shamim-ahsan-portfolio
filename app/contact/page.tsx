@@ -1,30 +1,41 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
 import { CONTACTS } from "@/constants/constants";
+import React from "react";
 import { BsCopy } from "react-icons/bs";
+
+interface Contact {
+  title: string;
+  item: string;
+}
 
 const Page = () => {
   const { toast } = useToast();
 
-  const handleCopy = (title: string) => {
-    toast({
-      title: `${title} copied!`,
-    });
+  const handleCopy = (contact: Contact) => {
+    navigator.clipboard
+      .writeText(contact.item)
+      .then(() => {
+        toast({
+          title: `${contact.title} copied!`,
+        });
+      })
+      .catch((err) => {
+        console.error("Failed to copy text:", err);
+      });
   };
 
   return (
-    <div>
+    <div className="min-h-screen">
       <section className="container w-full py-12">
         <h1 className=" text-center text-3xl font-extrabold">
           Get in touch, Let&apos;s talk.
         </h1>
 
         <div className="mx-auto max-w-full py-20 sm:w-[500px] lg:w-[700px]">
-          <Card className="pb-5 pt-8 text-center">
-            <CardContent className="flex flex-col gap-5">
+          <div className="card">
+            <div className="card-body">
               {CONTACTS.map((contact) => (
                 <div
                   className="mx-auto flex w-[2/3] justify-between "
@@ -38,20 +49,22 @@ const Page = () => {
                       value={contact.item}
                     />
                   </div>
-                  <Button
-                    onClick={() => handleCopy(contact.title)}
-                    variant="ghost"
+                  <button
+                    onClick={() => handleCopy(contact)}
+                    className="btn btn-ghost"
                   >
                     <BsCopy className="text-lg" />
-                  </Button>
+                  </button>
                 </div>
               ))}
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
       </section>
 
-      <Toaster />
+      <div className="bg-base-200">
+        <Toaster />
+      </div>
     </div>
   );
 };

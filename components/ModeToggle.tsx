@@ -1,21 +1,21 @@
 "use client";
+import { useThemeContext } from "@/context/ThemeProvider";
 import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-import React from "react";
 
 const ModeToggle = () => {
-  const { theme, setTheme } = useTheme();
-
+  const { isDarkMode, toggleTheme } = useThemeContext();
   return (
-    <>
-      {theme === "dark" ||
-      (theme === "system" &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches) ? (
-        <Sun onClick={() => setTheme("light")} />
-      ) : (
-        <Moon onClick={() => setTheme("dark")} />
-      )}
-    </>
+    <div className="swap swap-rotate">
+      <input type="checkbox" />
+      <Sun
+        className={`${isDarkMode ? "swap-off" : "swap-on"}`}
+        onClick={toggleTheme}
+      />
+      <Moon
+        className={`${isDarkMode ? "swap-on" : "swap-off"}`}
+        onClick={toggleTheme}
+      />
+    </div>
   );
 };
 

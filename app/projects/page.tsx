@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <section className="container w-full py-12">
       <h1 className=" text-3xl font-extrabold">What I have been working on</h1>
-      <p className="py-12 text-muted-foreground">
+      <p className="py-12 ">
         I like to learn through building projects. Take a look at some of the
         projects I have dedicated my time to.
       </p>
@@ -24,7 +24,7 @@ const Page = () => {
           </div>
 
           <h1 className=" py-5 text-xl font-extrabold">Multi Step Form</h1>
-          <p className="text-muted-foreground">
+          <p className="">
             A production-ready multi-step form that initiates the validation
             process at each step.
           </p>

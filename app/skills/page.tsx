@@ -2,10 +2,10 @@ import { BadgeCheck } from "lucide-react";
 import { SKILLS } from "@/constants/constants";
 const Page = () => {
   return (
-    <section className="container w-full py-12">
+    <section className="container min-h-screen w-full py-12">
       <h1 className=" text-3xl font-extrabold">My Skills</h1>
 
-      <p className="py-12 leading-relaxed text-muted-foreground lg:w-4/5">
+      <p className="py-12 leading-relaxed  lg:w-4/5">
         I&apos;ve actively expanded my knowledge and it&apos;s an on going
         process. Some of my core skills are given below:
       </p>

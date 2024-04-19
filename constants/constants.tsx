@@ -1,6 +1,7 @@
 import { BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
-import { FaUpwork } from "react-icons/fa6";
+import { FaUpwork, FaSquareGithub } from "react-icons/fa6";
+
 export const NAVITEMS = [
   {
     href: "/",
@@ -24,6 +25,7 @@ export const SKILLS = [
   "HTML5",
   "CSS3",
   "TAILWIND CSS",
+  "DAISY UI",
   "JAVASCRIPT",
   "TYPESCRIPT",
   "REACT JS",
@@ -49,11 +51,16 @@ export const SOCIAL_LINKS = [
   {
     title: "linkedIn",
     url: "https://www.linkedin.com/in/saswe/",
-    logo: <BsLinkedin />,
+    logo: <BsLinkedin size={20} />,
   },
   {
     title: "upword",
     url: "https://www.upwork.com/freelancers/~015d5e403962261c4b",
-    logo: <FaUpwork />,
+    logo: <FaUpwork size={22} />,
+  },
+  {
+    title: "github",
+    url: "https://github.com/shamim-001",
+    logo: <FaSquareGithub size={24} />,
   },
 ];

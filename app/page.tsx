@@ -1,3 +1,4 @@
+import MyIntro from "@/components/motion/MyIntro";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,16 +25,13 @@ export default function Home() {
           />
         </div>
 
-        <h1 className=" text-xl font-semibold leading-normal md:text-3xl md:font-extrabold  md:leading-relaxed">
-          Hi there, I am Shamim Ahsan. <br />
-          Front End <span className=" text-violet-600">
-            Developer,
-          </span> <br /> and Perpetual Learner.
-        </h1>
+        <h2 className=" text-xl font-semibold leading-normal md:text-3xl md:font-extrabold  md:leading-relaxed">
+          <MyIntro />
+        </h2>
       </section>
       <section className="grid grid-cols-1 gap-5 py-12 md:grid-cols-2 md:gap-20">
         <div className="flex flex-col gap-5">
-          <p className="text-muted-foreground">
+          <p>
             I made the transition from teaching to development by learning from
             amazing YouTube instructors worldwide and utilizing online education
             platforms such as{" "}
@@ -47,7 +45,7 @@ export default function Home() {
             .
           </p>
 
-          <p className="text-muted-foreground">
+          <p>
             I&apos;ve refined my skills by tackling challenges on online
             frontend challenge sites like{" "}
             <Link
@@ -63,7 +61,7 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="text-muted-foreground">
+          <p>
             My journey has been shaped by crafting memorable experiences. I
             believe in the power of code that&apos;s not just elegant, but also
             easy to maintain and understand - because great software lives on
