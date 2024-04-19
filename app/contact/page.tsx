@@ -33,22 +33,20 @@ const Page = () => {
           Get in touch, Let&apos;s talk.
         </h1>
 
-        <div className="mx-auto max-w-full py-20 sm:w-[500px] lg:w-[700px]">
-          <div className="card">
-            <div className="card-body">
+        <div className="mx-auto max-w-full py-20 md:w-[500px] lg:w-[750px]">
+          <div className="card shadow-xl">
+            <div className="card-body gap-5">
               {CONTACTS.map((contact) => (
                 <div
-                  className="mx-auto flex w-[2/3] justify-between "
                   key={contact.title}
+                  className="flex flex-col items-center justify-center gap-3 rounded border border-base-300 p-5 text-center shadow-md md:flex-row md:gap-8 md:border-none"
                 >
-                  <div className="flex items-center justify-center gap-8">
-                    <span className="text-lg"> {contact.logo} </span>
-                    <input
-                      className="border-none bg-transparent outline-none"
-                      type="text"
-                      value={contact.item}
-                    />
-                  </div>
+                  <span> {contact.logo} </span>
+                  <input
+                    className="border-none bg-transparent text-center outline-none"
+                    type="text"
+                    value={contact.item}
+                  />
                   <button
                     onClick={() => handleCopy(contact)}
                     className="btn btn-ghost"

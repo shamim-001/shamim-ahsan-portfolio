@@ -38,12 +38,12 @@ export const CONTACTS = [
   {
     title: "WhatsApp number",
     item: "+8801628486673",
-    logo: <BsWhatsapp />,
+    logo: <BsWhatsapp size={20} />,
   },
   {
     title: "Email address",
     item: "theshamimahsan@gmail.com",
-    logo: <CgMail />,
+    logo: <CgMail size={24} />,
   },
 ];
 
