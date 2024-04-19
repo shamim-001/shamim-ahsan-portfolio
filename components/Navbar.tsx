@@ -4,8 +4,9 @@ import Link from "next/link";
 import ModeToggle from "./ModeToggle";
 
 import { SOCIAL_LINKS } from "@/constants/constants";
-import { Menu } from "lucide-react";
+import { IoShareSocialSharp } from "react-icons/io5";
 import Menubar from "./Menubar";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   return (
@@ -37,8 +38,9 @@ const Navbar = () => {
         </div>
 
         <div className="flex justify-end gap-5">
-          <div className="flex gap-5">
-            <div className="flex items-center gap-5">
+          {/* social links */}
+          <div className=" flex gap-5">
+            <div className="hidden items-center gap-5 md:flex">
               {SOCIAL_LINKS.map((item) => (
                 <div key={item.title}>
                   <Link className="text-xl" href={item.url} target="_blank">
@@ -47,38 +49,29 @@ const Navbar = () => {
                 </div>
               ))}
             </div>
+            <div className="dropdown dropdown-bottom md:hidden">
+              <div role="button" tabIndex={0} className="m-1">
+                <IoShareSocialSharp size={22} />
+              </div>
+              <ul className="menu dropdown-content z-[1] w-16 justify-center gap-3 rounded-box bg-base-100 p-2 shadow">
+                {SOCIAL_LINKS.map((item) => (
+                  <div className="flex justify-center" key={item.title}>
+                    <Link className="text-xl" href={item.url} target="_blank">
+                      {item.logo}
+                    </Link>
+                  </div>
+                ))}
+              </ul>
+            </div>
+
             <div className=" cursor-pointer">
               <ModeToggle />
             </div>
           </div>
+
           {/* Mobile Menu */}
           <div className=" cursor-pointer md:hidden">
-            <div className="drawer">
-              <input
-                id="mobile-menu"
-                type="checkbox"
-                className="drawer-toggle"
-              />
-              <div className="drawer-content">
-                <label
-                  htmlFor="mobile-menu"
-                  className="drawer-button cursor-pointer"
-                >
-                  <Menu />
-                </label>
-              </div>
-              <div className="drawer-side">
-                <label
-                  htmlFor="mobile-menu"
-                  aria-label="close sidebar"
-                  className="drawer-overlay"
-                ></label>
-                <ul className="menu min-h-full w-80 bg-base-200 p-4 text-base-content">
-                  {/* Sidebar content here */}
-                  <Menubar />
-                </ul>
-              </div>
-            </div>
+            <MobileMenu />
           </div>
         </div>
       </div>
