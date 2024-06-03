@@ -69,3 +69,22 @@ export const SOCIAL_LINKS = [
     logo: <FaSquareGithub size={24} />,
   },
 ];
+
+export const PROJECTS = [
+  {
+    img: "/multi-step-form-desktop.png",
+    alt: "multi step form",
+    title: "Multi Step Form",
+    description:
+      "A production-ready multi-step form that initiates the validation process at each step.",
+    href: "https://github.com/shamim-001/frontendmentor-multi-step-form",
+  },
+  {
+    img: "/task-manager.png",
+    alt: "task manager",
+    title: "Task Manager App",
+    description:
+      "A MERN stack task manager app with a focus on seamless collaboration between the frontend and backend for a dynamic and user-friendly experience.",
+    href: "https://github.com/shamim-001/task-manager-frontend",
+  },
+];
