@@ -37,7 +37,7 @@ export const SKILLS = [
 export const CONTACTS = [
   {
     title: "WhatsApp number",
-    item: "+8801628486673",
+    item: "+8801749181410",
     logo: <BsWhatsapp size={20} />,
   },
   {
