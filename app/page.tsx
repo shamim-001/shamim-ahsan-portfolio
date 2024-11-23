@@ -8,7 +8,7 @@ export default function Home() {
       <section className="flex  flex-col items-center gap-8 pt-12 md:flex-row-reverse md:justify-center md:gap-20">
         <div>
           <Image
-            src="/Profile Picture.png"
+            src="/shamim pf.jpg"
             alt="Profile Picture"
             width={200}
             height={200}
@@ -16,7 +16,7 @@ export default function Home() {
             className=" rounded-full md:hidden"
           />
           <Image
-            src="/Profile Picture.png"
+            src="/shamim pf.jpg"
             alt="Profile Picture"
             width={300}
             height={300}
