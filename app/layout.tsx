@@ -28,12 +28,9 @@ const baseUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: {
-    default: "Shamim Ahsan | Local SEO Expert",
-    template: "%s | Shamim Ahsan",
-  },
+  title: "Shamim Ahsan | Local SEO Expert",
   description:
-    "Professional Local SEO services to improve your business visibility and rankings",
+    "Professional Local SEO services to improve your business visibility and rankings. Boost your Google Business Profile and optimize your website for local search.",
   keywords: [
     "Local SEO",
     "SEO Expert",
@@ -53,7 +50,7 @@ export const metadata: Metadata = {
       "Professional Local SEO services to improve your business visibility and rankings",
     images: [
       {
-        url: "/shamim-ahsan-seo-expert.jpg",
+        url: "/images/shamim-ahsan-seo-expert.jpg",
         width: 1200,
         height: 630,
         alt: "Shamim Ahsan - Local SEO Expert",
@@ -65,7 +62,7 @@ export const metadata: Metadata = {
     title: "Shamim Ahsan | Local SEO Expert",
     description:
       "Professional Local SEO services to improve your business visibility and rankings",
-    images: ["/shamim-ahsan-seo-expert.jpg"],
+    images: ["/images/shamim-ahsan-seo-expert.jpg"],
   },
   robots: {
     index: true,
@@ -118,6 +115,11 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="ri+H8X0o74gkFOAycDyLsQ"
+          async
+        ></script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
