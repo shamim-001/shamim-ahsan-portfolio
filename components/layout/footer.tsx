@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { Twitter, Linkedin, Instagram } from "lucide-react";
-
+import { FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -23,7 +22,7 @@ export default function Footer() {
                 aria-label="Twitter"
                 className="hover:text-secondary transition-colors"
               >
-                <Twitter className="h-5 w-5" />
+                <FaXTwitter className="h-5 w-5" />
               </Link>
               <Link
                 href="https://linkedin.com"
@@ -32,7 +31,7 @@ export default function Footer() {
                 aria-label="LinkedIn"
                 className="hover:text-secondary transition-colors"
               >
-                <Linkedin className="h-5 w-5" />
+                <FaLinkedin className="h-5 w-5" />
               </Link>
               <Link
                 href="https://instagram.com"
@@ -41,7 +40,7 @@ export default function Footer() {
                 aria-label="Instagram"
                 className="hover:text-secondary transition-colors"
               >
-                <Instagram className="h-5 w-5" />
+                <FaInstagram className="h-5 w-5" />
               </Link>
             </div>
           </div>
