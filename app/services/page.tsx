@@ -24,28 +24,28 @@ export default function ServicesPage() {
       title: "Google Business Profile Optimization",
       description:
         "Optimize your Google Business Profile to improve local visibility and attract nearby customers. I'll help you set up and optimize your profile with accurate information, compelling photos, and regular posts.",
-      image: "/images/services/gbp-optimization.jpg",
+      image: "/images/services/gbp-optimization.webp",
       link: "/services/gbp-optimization",
     },
     {
       title: "On-Page SEO",
       description:
         "Optimize your website content and structure to rank higher in search engine results. This includes keyword research, content optimization, meta tags, and internal linking strategies.",
-      image: "/images/services/on-page-seo.jpg",
+      image: "/images/services/on-page-seo.webp",
       link: "/services/on-page-seo",
     },
     {
       title: "Off-Page SEO",
       description:
         "Build high-quality backlinks and improve your online reputation to boost rankings. I'll help you develop a strategy for acquiring relevant, authoritative links to your website.",
-      image: "/images/services/off-page-seo.jpg",
+      image: "/images/services/off-page-seo.webp",
       link: "/services/off-page-seo",
     },
     {
       title: "Technical SEO",
       description:
         "Ensure your website's technical aspects are optimized for search engines and users. This includes site speed optimization, mobile-friendliness, structured data, and fixing crawl errors.",
-      image: "/images/services/technical-seo.jpg",
+      image: "/images/services/technical-seo.webp",
       link: "/services/technical-seo",
     },
   ];

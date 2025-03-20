@@ -37,7 +37,7 @@ export default function OnPageSEOPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/on-page-seo.jpg"
+                src="/images/on-page-seo.webp"
                 alt="On-Page SEO Services"
                 fill
                 className="object-cover"

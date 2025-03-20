@@ -30,7 +30,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden  order-2 md:order-1">
               <Image
-                src="/images/shamim-ahsan-local-seo-expert.jpg"
+                src="/images/shamim-ahsan-local-seo-expert.webp"
                 alt="Shamim Ahsan - Local SEO Expert"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

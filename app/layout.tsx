@@ -50,7 +50,7 @@ export const metadata: Metadata = {
       "Professional Local SEO services to improve your business visibility and rankings",
     images: [
       {
-        url: "/images/shamim-ahsan-seo-expert.jpg",
+        url: "/images/shamim-ahsan-seo-expert.webp",
         width: 1200,
         height: 630,
         alt: "Shamim Ahsan - Local SEO Expert",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Shamim Ahsan | Local SEO Expert",
     description:
       "Professional Local SEO services to improve your business visibility and rankings",
-    images: ["/images/shamim-ahsan-seo-expert.jpg"],
+    images: ["/images/shamim-ahsan-seo-expert.webp"],
   },
   robots: {
     index: true,

@@ -37,7 +37,7 @@ export default function TechnicalSEOPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/technical-seo.jpg"
+                src="/images/technical-seo.webp"
                 alt="Technical SEO Services"
                 fill
                 className="object-cover"

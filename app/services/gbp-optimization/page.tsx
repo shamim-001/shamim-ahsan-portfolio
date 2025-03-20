@@ -78,7 +78,7 @@ export default function GBPOptimizationPage() {
             </div>
             <div className="relative h-[400px] shadow-xl rounded-lg overflow-hidden ">
               <Image
-                src="/images/gbp-optimization.jpg"
+                src="/images/gbp-optimization.webp"
                 alt="Google Business Profile Optimization"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

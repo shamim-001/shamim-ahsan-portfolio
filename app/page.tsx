@@ -59,7 +59,7 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/images/shamim-ahsan-seo-expert.jpg"
+                src="/images/shamim-ahsan-seo-expert.webp"
                 alt="Shamim Ahsan SEO Expert"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -90,28 +90,28 @@ export default function Home() {
                 description:
                   "Optimize your Google Business Profile to improve local visibility and attract nearby customers.",
                 link: "/services/gbp-optimization",
-                image: "/images/services/gbp-optimization.jpg",
+                image: "/images/services/gbp-optimization.webp",
               },
               {
                 title: "On-Page SEO",
                 description:
                   "Optimize your website content and structure to rank higher in search engine results.",
                 link: "/services/on-page-seo",
-                image: "/images/services/on-page-seo.jpg",
+                image: "/images/services/on-page-seo.webp",
               },
               {
                 title: "Off-Page SEO",
                 description:
                   "Build high-quality backlinks and improve your online reputation to boost rankings.",
                 link: "/services/off-page-seo",
-                image: "/images/services/off-page-seo.jpg",
+                image: "/images/services/off-page-seo.webp",
               },
               {
                 title: "Technical SEO",
                 description:
                   "Ensure your website's technical aspects are optimized for search engines and users.",
                 link: "/services/technical-seo",
-                image: "/images/services/technical-seo.jpg",
+                image: "/images/services/technical-seo.webp",
               },
             ].map((service, index) => (
               <Card
