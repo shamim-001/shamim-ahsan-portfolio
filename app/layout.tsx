@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     canonical: baseUrl,
   },
   verification: {
-    google: "verification_token",
+    google: "google09bc2ced86198d17.html",
     yandex: "verification_token",
     yahoo: "verification_token",
   },
