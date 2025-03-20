@@ -88,9 +88,9 @@ export default function Header() {
               aria-expanded={isOpen}
             >
               {isOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-8 w-8" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-8 w-8" />
               )}
             </Button>
           </div>

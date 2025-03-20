@@ -1,70 +1,10 @@
-import type { BlogPost, CaseStudy } from "./schema"
-
-export function generateBlogPostSchema(post: BlogPost) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.excerpt,
-    image: post.featuredImage,
-    datePublished: post.publishedAt,
-    dateModified: post.updatedAt,
-    author: {
-      "@type": "Person",
-      name: post.author,
-      url: "https://shamimahsan.com/about",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Shamim Ahsan - Local SEO Expert",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://shamimahsan.com/logo.png",
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://shamimahsan.com/blog/${post.slug}`,
-    },
-    keywords: post.tags.join(", "),
-  }
-}
-
-export function generateCaseStudySchema(caseStudy: CaseStudy) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: caseStudy.title,
-    description: caseStudy.challenge,
-    image: caseStudy.featuredImage,
-    datePublished: caseStudy.publishedAt,
-    author: {
-      "@type": "Person",
-      name: "Shamim Ahsan",
-      url: "https://shamimahsan.com/about",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Shamim Ahsan - Local SEO Expert",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://shamimahsan.com/logo.png",
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://shamimahsan.com/case-studies/${caseStudy.id}`,
-    },
-  }
-}
-
 export function generateLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Shamim Ahsan - Local SEO Expert",
-    image: "https://shamimahsan.com/logo.png",
-    url: "https://shamimahsan.com",
+    image: "https://theshamimahsan.com/icon-512.png",
+    url: "https://theshamimahsan.com",
     telephone: "+8801749181410",
     email: "theshamimahsan@gmail.com",
     priceRange: "$$",
@@ -111,7 +51,7 @@ export function generateLocalBusinessSchema() {
             name: "Google Business Profile Optimization",
             description:
               "Optimize your Google Business Profile to improve local visibility and attract nearby customers.",
-            url: "https://shamimahsan.com/services/gbp-optimization",
+            url: "https://theshamimahsan.com/services/gbp-optimization",
           },
         },
         {
@@ -119,8 +59,9 @@ export function generateLocalBusinessSchema() {
           itemOffered: {
             "@type": "Service",
             name: "On-Page SEO",
-            description: "Optimize your website content and structure to rank higher in search engine results.",
-            url: "https://shamimahsan.com/services/on-page-seo",
+            description:
+              "Optimize your website content and structure to rank higher in search engine results.",
+            url: "https://theshamimahsan.com/services/on-page-seo",
           },
         },
         {
@@ -128,8 +69,9 @@ export function generateLocalBusinessSchema() {
           itemOffered: {
             "@type": "Service",
             name: "Off-Page SEO",
-            description: "Build high-quality backlinks and improve your online reputation to boost rankings.",
-            url: "https://shamimahsan.com/services/off-page-seo",
+            description:
+              "Build high-quality backlinks and improve your online reputation to boost rankings.",
+            url: "https://theshamimahsan.com/services/off-page-seo",
           },
         },
         {
@@ -137,13 +79,14 @@ export function generateLocalBusinessSchema() {
           itemOffered: {
             "@type": "Service",
             name: "Technical SEO",
-            description: "Ensure your website's technical aspects are optimized for search engines and users.",
-            url: "https://shamimahsan.com/services/technical-seo",
+            description:
+              "Ensure your website's technical aspects are optimized for search engines and users.",
+            url: "https://theshamimahsan.com/services/technical-seo",
           },
         },
       ],
     },
-  }
+  };
 }
 
 export function generateWebsiteSchema() {
@@ -151,16 +94,18 @@ export function generateWebsiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Shamim Ahsan - Local SEO Expert",
-    url: "https://shamimahsan.com",
+    url: "https://theshamimahsan.com",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://shamimahsan.com/search?q={search_term_string}",
+      target: "https://theshamimahsan.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
-  }
+  };
 }
 
-export function generateFAQSchema(faqs: { question: string; answer: string }[]) {
+export function generateFAQSchema(
+  faqs: { question: string; answer: string }[]
+) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -172,10 +117,12 @@ export function generateFAQSchema(faqs: { question: string; answer: string }[]) 
         text: faq.answer,
       },
     })),
-  }
+  };
 }
 
-export function generateBreadcrumbSchema(items: { name: string; url: string }[]) {
+export function generateBreadcrumbSchema(
+  items: { name: string; url: string }[]
+) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -185,6 +132,5 @@ export function generateBreadcrumbSchema(items: { name: string; url: string }[])
       name: item.name,
       item: item.url,
     })),
-  }
+  };
 }
-
