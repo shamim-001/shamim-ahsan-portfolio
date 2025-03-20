@@ -110,6 +110,11 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
+        {/* Google site verification */}
+        <meta
+          name="google-site-verification"
+          content="5f-aKuPAczVRroblrd3Llr19y0YX6al04M6BA10VGi0"
+        />
         <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="ri+H8X0o74gkFOAycDyLsQ"
