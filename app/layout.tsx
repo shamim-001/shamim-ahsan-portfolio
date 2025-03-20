@@ -78,11 +78,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: baseUrl,
   },
-  verification: {
-    google: "google09bc2ced86198d17.html",
-    yandex: "verification_token",
-    yahoo: "verification_token",
-  },
 };
 
 // Simple header fallback component
