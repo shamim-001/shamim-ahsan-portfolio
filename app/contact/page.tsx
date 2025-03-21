@@ -10,9 +10,6 @@ export const metadata: Metadata = {
   title: "Contact | Shamim Ahsan",
   description:
     "Get in touch with Shamim Ahsan for professional Local SEO services. Contact for a free consultation to improve your business visibility and rankings.",
-  alternates: {
-    canonical: "/contact",
-  },
 };
 
 export default function ContactPage() {
