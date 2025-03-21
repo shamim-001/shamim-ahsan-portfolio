@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Shamim Ahsan | Local SEO Expert",
   description:
     "Professional Local SEO services to improve your business visibility and rankings",
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "Local SEO",
     "SEO Expert",

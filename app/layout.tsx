@@ -28,16 +28,6 @@ const baseUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "Shamim Ahsan | Local SEO Expert",
-  description:
-    "Professional Local SEO services to improve your business visibility and rankings. Boost your Google Business Profile and optimize your website for local search.",
-  keywords: [
-    "Local SEO",
-    "SEO Expert",
-    "Google Business Profile",
-    "GBP Optimization",
-    "Bangladesh SEO",
-  ],
   authors: [{ name: "Shamim Ahsan" }],
   creator: "Shamim Ahsan",
   openGraph: {
@@ -47,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Shamim Ahsan - Local SEO Expert",
     title: "Shamim Ahsan | Local SEO Expert",
     description:
-      "Professional Local SEO services to improve your business visibility and rankings",
+      "Professional Local SEO services to improve your business visibility and rankings. Boost your Google Business Profile and optimize your website for local search.",
     images: [
       {
         url: "/images/shamim-ahsan-seo-expert.webp",
@@ -61,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shamim Ahsan | Local SEO Expert",
     description:
-      "Professional Local SEO services to improve your business visibility and rankings",
+      "Professional Local SEO services to improve your business visibility and rankings. Boost your Google Business Profile and optimize your website for local search.",
     images: ["/images/shamim-ahsan-seo-expert.webp"],
   },
   robots: {
@@ -74,9 +64,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  alternates: {
-    canonical: baseUrl,
   },
 };
 
