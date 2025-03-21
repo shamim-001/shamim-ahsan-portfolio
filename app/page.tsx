@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     "Dhaka SEO",
     "Bangladesh SEO",
   ],
+  alternates: {
+    canonical: "https://www.theshamimahsan.com/",
+  },
 };
 
 // Static generation

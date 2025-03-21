@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "On-Page SEO Services | Shamim Ahsan",
   description:
     "Professional On-Page SEO services to optimize your website content and structure for better search engine rankings and user experience.",
+  alternates: {
+    canonical: "https://www.theshamimahsan.com/services/on-page-seo",
+  },
 };
 
 export default function OnPageSEOPage() {

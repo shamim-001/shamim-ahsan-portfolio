@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "About Me",
   description:
     "Learn more about Shamim Ahsan, a professional Local SEO expert with years of experience",
+  alternates: {
+    canonical: "https://www.theshamimahsan.com/about",
+  },
 };
 
 export default function AboutPage() {

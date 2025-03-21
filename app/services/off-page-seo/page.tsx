@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Off-Page SEO Services | Shamim Ahsan",
   description:
     "Professional Off-Page SEO services to build high-quality backlinks, improve online reputation, and boost your website's authority and rankings.",
+  alternates: {
+    canonical: "https://www.theshamimahsan.com/services/off-page-seo",
+  },
 };
 
 export default function OffPageSEOPage() {

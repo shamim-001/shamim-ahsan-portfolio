@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "SEO Services",
   description:
     "Comprehensive SEO services to improve your business visibility and rankings",
+  alternates: {
+    canonical: "https://www.theshamimahsan.com/services",
+  },
 };
 
 export default function ServicesPage() {

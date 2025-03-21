@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Google Business Profile Optimization",
   description:
     "Professional Google Business Profile optimization services to improve your local visibility",
+  alternates: {
+    canonical: "https://www.theshamimahsan.com/services/gbp-optimization",
+  },
 };
 
 export default function GBPOptimizationPage() {

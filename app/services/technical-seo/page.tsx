@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Technical SEO Services | Shamim Ahsan",
   description:
     "Professional Technical SEO services to optimize your website's technical aspects for better search engine crawling, indexing, and user experience.",
+  alternates: {
+    canonical: "https://www.theshamimahsan.com/services/technical-seo",
+  },
 };
 
 export default function TechnicalSEOPage() {
