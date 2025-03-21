@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { generateBreadcrumbSchema } from "@/lib/structured-data";
@@ -106,6 +112,62 @@ export default function ServicesPage() {
                 </div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center">
+              Frequently Asked Questions About SEO Services
+            </h2>
+
+            <Accordion type="single" collapsible className="w-full">
+              {[
+                {
+                  question: "Why should I invest in SEO services?",
+                  answer:
+                    "Investing in SEO services is crucial for long-term online success. Unlike paid advertising, SEO provides sustainable organic traffic, builds credibility, and offers a high ROI. It helps you reach your target audience when they're actively searching for your products or services, leading to higher quality leads and conversions.",
+                },
+                {
+                  question: "How long does it take to see results from SEO?",
+                  answer:
+                    "SEO is a long-term strategy, and results typically become noticeable within 3-6 months. However, the timeline can vary depending on factors like your website's current state, competition, and the scope of SEO work. Some improvements may be visible sooner, while significant ranking changes for competitive keywords may take longer.",
+                },
+                {
+                  question: "Do I need all these SEO services for my business?",
+                  answer:
+                    "Not necessarily. The SEO services your business needs depend on various factors, including your current online presence, business goals, and target audience. I offer customized SEO strategies tailored to your specific needs. After a thorough analysis of your website and business, I can recommend the most effective combination of services for your situation.",
+                },
+                {
+                  question: "How do you measure the success of SEO services?",
+                  answer:
+                    "I measure SEO success through various metrics, including organic traffic growth, keyword rankings, conversion rates, and ROI. I provide regular reports that track these key performance indicators (KPIs) and demonstrate the impact of our SEO efforts on your business goals. This data-driven approach allows us to continually refine and improve our strategy.",
+                },
+                {
+                  question: "Is SEO a one-time task or ongoing process?",
+                  answer:
+                    "SEO is an ongoing process. While initial optimizations can provide a solid foundation, search engines constantly update their algorithms, and your competitors are always working to improve their rankings. Ongoing SEO efforts are necessary to maintain and improve your search visibility, adapt to algorithm changes, and stay ahead of the competition.",
+                },
+                {
+                  question:
+                    "How do you stay up-to-date with SEO best practices?",
+                  answer:
+                    "I stay current with SEO best practices through continuous learning, attending industry conferences, participating in professional SEO communities, and closely monitoring official communications from search engines. This commitment to ongoing education ensures that I can provide you with the most effective and up-to-date SEO strategies.",
+                },
+              ].map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger className="text-left font-semibold">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
