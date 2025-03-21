@@ -11,7 +11,7 @@ import { Check, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "On-Page SEO Services | Shamim Ahsan",
+  title: "On-Page SEO Services",
   description:
     "Professional On-Page SEO services to optimize your website content and structure for better search engine rankings and user experience.",
   alternates: {

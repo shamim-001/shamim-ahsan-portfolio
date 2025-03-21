@@ -7,7 +7,7 @@ import GoogleMap from "@/components/contact/google-map";
 import WhatsAppChat from "@/components/contact/whatsapp-chat";
 
 export const metadata: Metadata = {
-  title: "Contact | Shamim Ahsan",
+  title: "Contact",
   description:
     "Get in touch with Shamim Ahsan for professional Local SEO services. Contact for a free consultation to improve your business visibility and rankings.",
   alternates: {

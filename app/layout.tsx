@@ -27,6 +27,10 @@ const baseUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://theshamimahsan.com";
 
 export const metadata: Metadata = {
+  title: {
+    default: "Shamim Ahsan | Local SEO Expert",
+    template: "%s | Shamim Ahsan",
+  },
   metadataBase: new URL(baseUrl),
   authors: [{ name: "Shamim Ahsan" }],
   creator: "Shamim Ahsan",
@@ -40,7 +44,7 @@ export const metadata: Metadata = {
       "Professional Local SEO services to improve your business visibility and rankings. Boost your Google Business Profile and optimize your website for local search.",
     images: [
       {
-        url: "/images/shamim-ahsan-seo-expert.webp",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Shamim Ahsan - Local SEO Expert",
@@ -52,7 +56,7 @@ export const metadata: Metadata = {
     title: "Shamim Ahsan | Local SEO Expert",
     description:
       "Professional Local SEO services to improve your business visibility and rankings. Boost your Google Business Profile and optimize your website for local search.",
-    images: ["/images/shamim-ahsan-seo-expert.webp"],
+    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,

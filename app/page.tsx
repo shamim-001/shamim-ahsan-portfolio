@@ -15,7 +15,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Shamim Ahsan | Local SEO Expert",
   description:
-    "Professional Local SEO services to improve your business visibility and rankings",
+    "Professional Local SEO services to improve your business visibility and rankings. Boost your Google Business Profile and optimize your website for local search.",
   keywords: [
     "Local SEO",
     "SEO Expert",
