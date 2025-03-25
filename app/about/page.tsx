@@ -44,9 +44,9 @@ export default function AboutPage() {
             <div className="order-1 md:order-2">
               <h1 className="text-3xl md:text-4xl font-bold mb-6">About Me</h1>
               <p className="text-lg text-gray-700 mb-4">
-                I'm Shamim Ahsan, a dedicated Local SEO expert with over 5 years
-                of experience helping businesses improve their online visibility
-                and attract more customers.
+                I'm Shamim Ahsan, a dedicated Local SEO expert helping
+                businesses improve their online visibility and attract more
+                customers.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 My journey in SEO began when I realized how many local

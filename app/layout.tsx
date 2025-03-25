@@ -31,6 +31,8 @@ export const metadata: Metadata = {
     default: "Shamim Ahsan | Local SEO Expert",
     template: "%s | Shamim Ahsan",
   },
+  description:
+    "Professional Local SEO services to improve your business visibility and rankings",
   metadataBase: new URL(baseUrl),
   authors: [{ name: "Shamim Ahsan" }],
   creator: "Shamim Ahsan",
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Shamim Ahsan - Local SEO Expert",
     title: "Shamim Ahsan | Local SEO Expert",
     description:
-      "Professional Local SEO services to improve your business visibility and rankings. Boost your Google Business Profile and optimize your website for local search.",
+      "Professional Local SEO services to improve your business visibility and rankings",
     images: [
       {
         url: "/opengraph-image.png",
@@ -53,10 +55,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shamim Ahsan | Local SEO Expert",
-    description:
-      "Professional Local SEO services to improve your business visibility and rankings. Boost your Google Business Profile and optimize your website for local search.",
-    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,
