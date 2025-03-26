@@ -16,7 +16,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://twitter.com"
+                href="https://x.com/theshamimahsan"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
@@ -25,7 +25,7 @@ export default function Footer() {
                 <FaXTwitter className="h-5 w-5" />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/theshamimahsan/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
