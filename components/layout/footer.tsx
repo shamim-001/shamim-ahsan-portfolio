@@ -33,15 +33,6 @@ export default function Footer() {
               >
                 <FaLinkedin className="h-5 w-5" />
               </Link>
-              <Link
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="hover:text-secondary transition-colors"
-              >
-                <FaInstagram className="h-5 w-5" />
-              </Link>
             </div>
           </div>
 
