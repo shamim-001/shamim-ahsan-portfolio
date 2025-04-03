@@ -105,11 +105,6 @@ export default function RootLayout({
           content="5f-aKuPAczVRroblrd3Llr19y0YX6al04M6BA10VGi0"
         />
         <script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="ri+H8X0o74gkFOAycDyLsQ"
-          async
-        ></script>
-        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
